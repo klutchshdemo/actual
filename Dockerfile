@@ -11,6 +11,6 @@ RUN mkdir -p /data
 # Actual’s web UI and API are served on port 5006 by default
 ENV PORT=5006
 EXPOSE 5006
-
+RUN yarn
 # Start the Actual server
 CMD ["/bin/sh", "-c", "yarn start"]
